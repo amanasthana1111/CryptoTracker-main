@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.root{
+  background-color: #FF9E47;
+}
+
+.header {
+  background-color: #0D0D0D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h3 a{
+  font-size: 22px;
+  font-weight: 700;
+  color: #FF9E47;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #0d0d0d;
+}
+
+.nav li {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav li:hover {
+  background-color: #1c1c1c;
+  color: #FF9E47;;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav a:hover{
+  color: #FF9E47;;
+}
+
+
+.body1 {
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional dotted radial background effect */
+.body1::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: radial-gradient(circle, #2b2b2b 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.body1 h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  z-index: 1;
+  position: relative;
+}
+
+.body1 h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF9E47;
+  margin-bottom: 40px;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  z-index: 1;
+  position: relative;
+}
+.CARDDIV {
+  width: 160px;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  padding: 20px 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.CARDDIV:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.CARDDIV img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.CARDDIV h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.CARDDIV h6 {
+  font-size: 14px;
+  color: #cccccc;
+  font-weight: 400;
+}
+.table-container {
+  background-color: #111;
+  border-radius: 16px;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr .4fr 1.5fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.table-header {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.table-row:hover {
+  background-color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+.coin {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin img {
+  width: 28px;
+  height: 28px;
+}
+
+.chart {
+  width: 100px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.DATA{
+  display: flex;
+  gap:20px
+  
+}
+.chartimg{
+  img{
+    width: 100px;
+  }
+}
+.footer {
+  background-color: #0d0d0d;
+  color: #e67d06;
+  padding: 40px 20px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #999;
+}
+.crypto-link {
+  color: #efedea;           
+  text-decoration: none;    
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.crypto-link:hover {
+  color: #ffae42;           
+  /* text-decoration: underline; */
+  transform: scale(1.05);  
+}
+/* CryptoPage.css */
+
+/* === Main Container === */
+.crypto-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #121212;
+  color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 168, 0, 0.1);
+}
+
+/* === Header Section === */
+.crypto-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #2c2c2c;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.crypto-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: white;
+  padding: 6px;
+  border: 2px solid #ff9800;
+  box-shadow: 0 0 6px rgba(255, 152, 0, 0.4);
+}
+
+.crypto-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.crypto-symbol {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffcc80;
+  margin-left: 10px;
+}
+
+/* === Description === */
+.crypto-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #c7c7c7;
+}
+
+/* === Links Section === */
+.crypto-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.crypto-link {
+  background-color: #1e1e1e;
+  color: #ffa726;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #333;
+  transition: all 0.25s ease;
+}
+
+.crypto-link:hover {
+  background-color: #ffa726;
+  color: #121212;
+  transform: scale(1.05);
+}
+
+/* === Market Data Section === */
+.market-section {
+  background-color: #1b1b1b;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
+  margin-top: 30px;
+}
+
+.market-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffa726;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.market-data {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.market-data li {
+  padding: 12px 0;
+  border-bottom: 1px dashed #333;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.market-data li strong {
+  color: #ffcc80;
+  margin-right: 10px;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #ffa726;
+  font-size: 1.1rem;
+}
+
+.crypto-loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 165, 0, 0.2);
+  border-top: 5px solid #ffa726;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.empty-watchlist {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.1);
+  color: #ffb74d;
+ 
+}
+
+.empty-watchlist .broken-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+ 
+}
+
+.empty-watchlist h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.empty-watchlist p {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+/* list wrapper */
+.news-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* each card */
+.news-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #111110;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #f1f1f1;
+  border: 1px solid #262626;
+  transition: background 0.2s ease;
+}
+
+.news-card:hover {
+  background: #232323;
+}
+
+/* thumbnail */
+.news-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* text block */
+.news-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* title (one or two lines max) */
+.news-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+  color: #ffb74d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* show 1–2 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* meta line */
+.news-meta {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+}
+
+/* small‑screen tweak */
+@media (max-width: 480px) {
+  .news-thumb { width: 60px; height: 60px; }
+  .news-title { font-size: 0.85rem; }
+  .news-meta  { font-size: 0.7rem; }
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(145deg, #0d0d0d, #1b1b1b);
+  min-height: 100vh;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  color: #e0e0e0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ffb74d;
+}
+
+.about-name {
+  font-size: 1.8rem;
+  margin: 10px 0 5px;
+  color: #ffb74d;
+}
+
+.about-role {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #aaaaaa;
+}
+
+.about-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #cccccc;
+}
+
+.about-socials a {
+  margin: 0 10px;
+  font-size: 1.6rem;
+  color: #dddddd;
+  transition: color 0.3s ease;
+}
+
+.about-socials a:hover {
+  color: #ffb74d;
+}
+
+
+
