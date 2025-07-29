@@ -26,7 +26,7 @@
 
 ## 🌐 Live Demo
 
-[Click here to view the live site](#) *(unrivaled-pie-767488.netlify.app)*
+[Click here to view the live site](#) *(https://unrivaled-pie-767488.netlify.app/)*
 
 
 ## 📌 Getting Started
